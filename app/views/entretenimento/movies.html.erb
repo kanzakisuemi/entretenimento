@@ -1,0 +1,18 @@
+<div class="row gap-3 pt-5">
+  <% @movies.each do |movie| %>
+    <div class="col">
+      <div class="card" style="width: 18rem; height: 10rem;">
+        <div class="card-header">
+          <h5>
+            <%= movie[:title] %>
+          </h5>
+        </div>
+        <div class="card-body">
+          <p>
+            "<%= movie[:quote] %>"
+          </p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

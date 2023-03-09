@@ -1,0 +1,18 @@
+<div class="row gap-3 pt-5">
+  <% @songs.each do |song| %>
+    <div class="col">
+      <div class="card" style="width: 18rem; height: 8rem;">
+        <div class="card-header">
+          <h5>
+            <%= song[:genre] %>
+          </h5>
+        </div>
+        <div class="card-body">
+          <p>
+            <%= song[:band] %>
+          </p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

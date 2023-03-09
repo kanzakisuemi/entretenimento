@@ -1,0 +1,36 @@
+<div class="row gap-3 pt-5">
+  <% @characters.each do |character| %>
+    <div class="col">
+      <div class="card mb-3" style="width: 18rem; height: 8rem;">
+        <div class="card-header">
+          <h5> Big Bang Theory </h5>
+        </div>
+        <div class="card-body">
+          <p>
+            <%= character[:bigbang] %>
+          </p>
+        </div>
+      </div>
+      <div class="card mb-3" style="width: 18rem; height: 8rem;">
+        <div class="card-header">
+          <h5> Supernatural </h5>
+        </div>
+        <div class="card-body">
+          <p>
+            <%= character[:supernatural] %>
+          </p>
+        </div>
+      </div>
+      <div class="card mb-3" style="width: 18rem; height: 8rem;">
+        <div class="card-header">
+          <h5> Game of Thrones </h5>
+        </div>
+        <div class="card-body">
+          <p>
+            <%= character[:game_of_thrones] %>
+          </p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

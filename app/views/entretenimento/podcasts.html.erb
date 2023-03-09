@@ -1,0 +1,21 @@
+<div class="row gap-3 pt-5">
+  <% @podcasts.each do |podcast| %>
+    <div class="col">
+      <div class="card mb-3" style="width: 18rem; height: 14rem;">
+        <div class="card-header">
+          <h5> Game Podcast </h5>
+        </div>
+        <div class="card-body">
+          <p>
+            <%= podcast[:game] %>
+          </p>
+        </div>
+        <div class="card-footer">
+          <p>
+            <%= podcast[:genre] %>
+          </p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

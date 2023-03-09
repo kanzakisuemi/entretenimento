@@ -1,0 +1,23 @@
+<div class="row gap-3 pt-5">
+  <% @books.each do |book| %>
+    <div class="col">
+      <div class="card mb-3" style="width: 18rem; height: 14rem;">
+        <div class="card-header">
+          <h5>
+            <%= book[:genre] %>
+          </h5>
+        </div>
+        <div class="card-body">
+          <p>
+            <%= book[:title] %>
+          </p>
+        </div>
+        <div class="card-footer">
+          <p>
+            <%= book[:author] %>
+          </p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,14 @@
+<div class="row pt-5">
+  <div class="col"></div>
+  <div class="col">
+    <h5 class="text-center mb-4">Edit</h5>
+    <%= form_with url: update_path, method: :patch, class: 'text-center' do |form| %>
+      <%= text_field_tag :name, @user[:name], class: 'form-control mb-3'  %>
+      <%= text_field_tag :idade, @user[:idade], class: 'form-control mb-3' %>
+      <%= submit_tag "Submit", class: "btn btn-secondary" %>
+    <% end %>
+  </div>
+  <div class="col"></div>
+</div>
+
+

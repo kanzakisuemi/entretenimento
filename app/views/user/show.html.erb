@@ -1,0 +1,21 @@
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Age</th>
+    </tr>
+  </thead>
+  <% if @user.present? %>
+  <tbody>
+    <tr>
+      <th scope="row"><%= @user[:id] %></th>
+      <td><%= @user[:name] %></td>
+      <td><%= @user[:idade] %></td>
+      <td><%= link_to "edit", edit_path(id: @user[:id]), class: "btn btn-warning" %></td>
+      <td><%= link_to "delete", destroy_path(@user), data: { turbo: true, turbo_method: :delete, turbo_confirm: "Are u sure about deleting it?" }, class: "btn btn-danger"  %></td>
+    </tr>
+  </tbody>
+  <% end %>
+</table>

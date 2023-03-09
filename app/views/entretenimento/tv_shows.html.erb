@@ -1,0 +1,26 @@
+<div class="row gap-3 pt-5">
+  <% @tv_shows.each do |show| %>
+    <div class="col">
+      <div class="card mb-3" style="width: 18rem; height: 12rem;">
+        <div class="card-header">
+          <h5> Sponge Bob </h5>
+        </div>
+        <div class="card-body">
+          <p>
+            <%= show[:coisas_estranhas] %>
+          </p>
+        </div>
+      </div>
+      <div class="card mb-3" style="width: 18rem; height: 18rem;">
+        <div class="card-header">
+          <h5> Stranger Things </h5>
+        </div>
+        <div class="card-body">
+          <p>
+            <%= show[:bob_esponja] %>
+          </p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

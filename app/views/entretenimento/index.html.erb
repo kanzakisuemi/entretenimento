@@ -1,0 +1,28 @@
+<div class="row pt-5">
+  <div class="col"></div>
+  <div class="col">
+    <h5>Info cards on movies, music and on!</h5>
+    <p>Take a look in your category of interest and enjoy our content! You can use our cards everyday as recomendations on any topic, as we daily update our database.</p>
+  </div>
+  <div class="col"></div>
+</div>
+<div class="row pt-5">
+  <div class="col"></div>
+  <div class="col">
+    <%= image_tag "imagecasatorta.jpg", title: "casa torta" %>
+  </div>
+  <div class="col"></div>
+</div>
+<div class="row pt-5">
+  <div class="col"></div>
+  <div class="col">
+    <h5 class="text-center mb-4">Register</h5>
+    <%= form_with url: cadastro_path, class: 'text-center' do |form| %>
+      <%= text_field_tag :name, nil, placeholder: 'Insert your name here', class: 'form-control mb-3'  %>
+      <%= text_field_tag :idade, nil, placeholder: 'Insert your age here', class: 'form-control mb-3' %>
+      <%= submit_tag "Submit", class: "btn btn-secondary" %>
+    <% end %>
+  </div>
+  <div class="col"></div>
+</div>
+
