@@ -1,19 +1,14 @@
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Name</th>
-      <th scope="col">Age</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @users.each do |user| %>
-      <tr>
-        <th scope="row"><%= user[:id] %></th>
-        <td><%= user[:name] %></td>
-        <td><%= user[:idade] %></td>
-        <td><%= link_to "show", show_path(id: user[:id]), class: "btn btn-secondary"  %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<div class="row gap-3 pt-5">
+  <% @users.each do |user| %>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img src="https://placekitten.com/640/640" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><%= user[:name] %></h5>
+          <p class="card-text"><%= user[:idade] %> years old.</p>
+          <td><%= link_to "show", show_path(id: user[:id]), class: "btn btn-secondary" %></td>
+        </div>
+      </div>
+    </div>
+  <% end %>
+<div>

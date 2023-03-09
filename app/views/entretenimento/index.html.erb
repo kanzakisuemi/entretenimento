@@ -6,17 +6,17 @@
   </div>
   <div class="col"></div>
 </div>
-<div class="row pt-5">
+<div class="row">
   <div class="col"></div>
   <div class="col">
-    <%= image_tag "imagecasatorta.jpg", title: "casa torta" %>
+    <%= image_tag "imagecasatorta.jpg", title: "casa torta", widht: "100rem", height: "100rem", class: "rounded mx-auto d-block" %>
   </div>
   <div class="col"></div>
 </div>
-<div class="row pt-5">
+<div class="row">
   <div class="col"></div>
   <div class="col">
-    <h5 class="text-center mb-4">Register</h5>
+    <h5 class="text-center mb-4">Become a member</h5>
     <%= form_with url: cadastro_path, class: 'text-center' do |form| %>
       <%= text_field_tag :name, nil, placeholder: 'Insert your name here', class: 'form-control mb-3'  %>
       <%= text_field_tag :idade, nil, placeholder: 'Insert your age here', class: 'form-control mb-3' %>

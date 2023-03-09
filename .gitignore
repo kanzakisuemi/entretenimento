@@ -38,3 +38,7 @@
 !/app/assets/builds/.keep
 
 /node_modules
+
+# others
+/app/views/user/lista_safe.html.erb
+/app/views/user/show_safe.html.erb
